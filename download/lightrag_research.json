@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://github.com/HKUDS/LightRAG",
+    "name": "[EMNLP2025] \"LightRAG: Simple and Fast Retrieval-Augmented Generation\" - GitHub",
+    "snippet": "The LightRAG Server is designed to provide Web UI and API support. The Web UI facilitates document indexing, knowledge graph exploration, and a simple RAG ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.05779",
+    "name": "[2410.05779] LightRAG: Simple and Fast Retrieval-Augmented Generation - arXiv.org",
+    "snippet": "This innovative framework employs a dual-level retrieval system that enhances comprehensive information retrieval from both low-level and high-level knowledge ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aclanthology.org/2025.findings-emnlp.568.pdf",
+    "name": "[PDF] LightRAG: Simple and Fast Retrieval-Augmented Generation - ACL Anthology",
+    "snippet": "LightRAG is pub- licly available as an open-source framework at: https://github.com/HKUDS/LightRAG. utility in real-world applications. By ...",
+    "host_name": "aclanthology.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@samarrana407/lightrag-a-graphrag-alternative-636d644a05cb",
+    "name": "LightRAG : A GraphRAG Alternative. | by Samar Singh - Medium",
+    "snippet": "LightRAG is a streamlined RAG framework designed for generating responses by retrieving relevant chunks of knowledge, using knowledge graphs alongside ...",
+    "host_name": "medium.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.researchgate.net/publication/384770914_LightRAG_Simple_and_Fast_Retrieval-Augmented_Generation",
+    "name": "(PDF) LightRAG: Simple and Fast Retrieval-Augmented Generation - ResearchGate",
+    "snippet": "This innovative framework employs a dual-level retrieval system that enhances comprehensive information retrieval from both low-level and high-level knowledge ...",
+    "host_name": "www.researchgate.net",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://jimmysong.io/ai/lightrag",
+    "name": "LightRAG | Jimmy Song",
+    "snippet": "LightRAG is a lightweight Retrieval-Augmented Generation toolkit that supports document indexing, graph extraction, and deployable server/core modes.",
+    "host_name": "jimmysong.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/0xSojalSec/posts/raglight-is-a-lightweight-python-framework-specifically-designed-for-retrieval-a/1287477882906612",
+    "name": "RAGLight is a lightweight Python framework specifically designed for Retrieval-Augmented  - Facebook",
+    "snippet": "✨ Provides three pipelines: Basic RAG, Proxy RAG, and Reasoning-Enhanced RAT ✨ Builds a knowledge base directly from a GitHub repository A ...",
+    "host_name": "www.facebook.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lightrag.github.io",
+    "name": "LightRAG",
+    "snippet": "This innovative framework employs a dual-level retrieval system that enhances comprehensive information retrieval from both low-level and high-level knowledge ... Missing: features | Show results with: features",
+    "host_name": "lightrag.github.io",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

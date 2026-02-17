@@ -1,0 +1,783 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* ============================================
+     SMILE SAVERS DENTAL - ENTERPRISE DESIGN SYSTEM
+     Warm Healthcare Palette for Hispanic Elderly
+     ============================================ */
+  
+  /* Primary - Warm Teal (Healthcare Trust + Warmth) */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+  --color-teal-900: #134e4a;
+  --color-teal-950: #042f2e;
+  
+  /* Secondary - Warm Sage (Professional + Earthy) */
+  --color-sage-50: #f6f7f6;
+  --color-sage-100: #e3e7e3;
+  --color-sage-200: #c7d0c7;
+  --color-sage-300: #a3b1a3;
+  --color-sage-400: #7d8f7d;
+  --color-sage-500: #627362;
+  --color-sage-600: #4d5c4d;
+  --color-sage-700: #3d4a3d;
+  --color-sage-800: #2f3a2f;
+  --color-sage-900: #1a221a;
+  
+  /* Accent - Warm Coral (Energetic + Welcoming) */
+  --color-coral-50: #fff7ed;
+  --color-coral-100: #ffedd5;
+  --color-coral-200: #fed7aa;
+  --color-coral-300: #fdba74;
+  --color-coral-400: #fb923c;
+  --color-coral-500: #f97316;
+  --color-coral-600: #ea580c;
+  --color-coral-700: #c2410c;
+  --color-coral-800: #9a3412;
+  --color-coral-900: #7c2d12;
+  
+  /* Warm Neutrals */
+  --color-warm-50: #fafaf9;
+  --color-warm-100: #f5f5f4;
+  --color-warm-200: #e7e5e4;
+  --color-warm-300: #d6d3d1;
+  --color-warm-400: #a8a29e;
+  --color-warm-500: #78716c;
+  --color-warm-600: #57534e;
+  --color-warm-700: #44403c;
+  --color-warm-800: #292524;
+  --color-warm-900: #1c1917;
+  
+  /* Semantic Colors */
+  --color-success: #22c55e;
+  --color-success-light: #dcfce7;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-error: #ef4444;
+  --color-error-light: #fee2e2;
+  --color-info: #3b82f6;
+  --color-info-light: #dbeafe;
+}
+
+:root {
+  --radius: 0.5rem;
+  
+  /* ============================================
+     SMILE SAVERS DENTAL - LIGHT THEME
+     Warm, Inviting, Healthcare Trust
+     ============================================ */
+  
+  /* Background - Warm whites (not clinical pure white) */
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  
+  --card: #ffffff;
+  --card-foreground: #1c1917;
+  
+  --popover: #ffffff;
+  --popover-foreground: #1c1917;
+  
+  /* Primary - Warm Teal for healthcare trust */
+  --primary: #0d9488;
+  --primary-foreground: #ffffff;
+  
+  /* Secondary - Warm Sage for professionalism */
+  --secondary: #3d4a3d;
+  --secondary-foreground: #ffffff;
+  
+  /* Muted - Warm gray tones */
+  --muted: #f5f5f4;
+  --muted-foreground: #57534e;
+  
+  /* Accent - Warm Coral for CTAs */
+  --accent: #ea580c;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #ef4444;
+  --border: #e7e5e4;
+  --input: #e7e5e4;
+  --ring: #0d9488;
+  
+  --chart-1: #0d9488;
+  --chart-2: #ea580c;
+  --chart-3: #3d4a3d;
+  --chart-4: #14b8a6;
+  --chart-5: #627362;
+  
+  --sidebar: #fafaf9;
+  --sidebar-foreground: #1c1917;
+  --sidebar-primary: #0d9488;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f5f4;
+  --sidebar-accent-foreground: #1c1917;
+  --sidebar-border: #e7e5e4;
+  --sidebar-ring: #0d9488;
+}
+
+.dark {
+  --background: #1c1917;
+  --foreground: #fafaf9;
+  
+  --card: #292524;
+  --card-foreground: #fafaf9;
+  
+  --popover: #292524;
+  --popover-foreground: #fafaf9;
+  
+  --primary: #14b8a6;
+  --primary-foreground: #1c1917;
+  
+  --secondary: #627362;
+  --secondary-foreground: #fafaf9;
+  
+  --muted: #44403c;
+  --muted-foreground: #a8a29e;
+  
+  --accent: #f97316;
+  --accent-foreground: #1c1917;
+  
+  --destructive: #ef4444;
+  --border: #44403c;
+  --input: #44403c;
+  --ring: #14b8a6;
+  
+  --chart-1: #14b8a6;
+  --chart-2: #f97316;
+  --chart-3: #627362;
+  --chart-4: #2dd4bf;
+  --chart-5: #7d8f7d;
+  
+  --sidebar: #292524;
+  --sidebar-foreground: #fafaf9;
+  --sidebar-primary: #14b8a6;
+  --sidebar-primary-foreground: #1c1917;
+  --sidebar-accent: #44403c;
+  --sidebar-accent-foreground: #fafaf9;
+  --sidebar-border: #44403c;
+  --sidebar-ring: #14b8a6;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Elderly-friendly base font size */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  html {
+    scroll-behavior: smooth;
+    /* Prevent font size adjustment on mobile */
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Skip to Content
+   ============================================ */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0d9488;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-weight: 600;
+  transition: top 0.3s ease;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  top: 16px;
+}
+
+/* ============================================
+   RESPONSIVE CONTAINERS
+   Enterprise breakpoint system
+   ============================================ */
+.container-mobile {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 640px) {
+  .container-mobile {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-mobile {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* ============================================
+   TOUCH TARGETS (WCAG AAA)
+   Minimum 44px for all interactive elements
+   ============================================ */
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.touch-target-lg {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.touch-target-elderly {
+  min-width: 56px;
+  min-height: 56px;
+}
+
+/* ============================================
+   ELDERLY-FRIENDLY TYPOGRAPHY
+   ============================================ */
+.text-elderly-base {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.text-elderly-lg {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+.high-contrast-mode {
+  --background: #000000 !important;
+  --foreground: #ffffff !important;
+  --primary: #00ffff !important;
+  --primary-foreground: #000000 !important;
+  --secondary: #ffff00 !important;
+  --secondary-foreground: #000000 !important;
+  --accent: #ff6600 !important;
+  --accent-foreground: #000000 !important;
+  --muted: #1a1a1a !important;
+  --muted-foreground: #ffffff !important;
+  --card: #0a0a0a !important;
+  --card-foreground: #ffffff !important;
+  --border: #ffffff !important;
+}
+
+.high-contrast-mode * {
+  border-color: #ffffff !important;
+}
+
+.high-contrast-mode a,
+.high-contrast-mode button {
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+}
+
+/* ============================================
+   REDUCED MOTION
+   For users who prefer reduced motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   ENHANCED FOCUS STATES (WCAG AAA)
+   ============================================ */
+*:focus-visible {
+  outline: 4px solid #0d9488 !important;
+  outline-offset: 4px !important;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  box-shadow: 0 0 0 8px rgba(13, 148, 136, 0.3) !important;
+}
+
+/* ============================================
+   LARGE TEXT MODE
+   ============================================ */
+.large-text-mode {
+  font-size: 120% !important;
+}
+
+.large-text-mode h1 { font-size: 2.5rem !important; }
+.large-text-mode h2 { font-size: 2rem !important; }
+.large-text-mode h3 { font-size: 1.5rem !important; }
+.large-text-mode p,
+.large-text-mode li,
+.large-text-mode span {
+  font-size: 1.125rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d9488;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f766e;
+}
+
+/* ============================================
+   TRUST BADGE STYLES
+   ============================================ */
+.trust-badge {
+  background: linear-gradient(135deg, #f0fdfa, #fafaf9);
+  border: 2px solid #0d9488;
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trust-badge-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(13, 148, 136, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================
+   INSURANCE BADGES
+   Color-coded for quick recognition
+   ============================================ */
+.insurance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.insurance-badge.medicare {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.insurance-badge.medicaid {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
+}
+
+.insurance-badge.emergency {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.insurance-badge.insurance {
+  background: #f0fdfa;
+  color: #0f766e;
+  border: 1px solid #5eead4;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes phone-ring {
+  0%, 30% {
+    opacity: 0;
+    transform: translate3d(-10px, 10px, 0);
+  }
+  60%, 80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.4s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* ============================================
+   MOBILE BOTTOM NAV SAFE AREA
+   ============================================ */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ============================================
+   GLASS MORPHISM - Turborepo Dev Server Style
+   ============================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+}
+
+/* Floating card style like Turborepo dev server */
+.floating-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Primary blur effect from logo */
+.blur-primary {
+  background: linear-gradient(
+    135deg,
+    rgba(13, 148, 136, 0.15) 0%,
+    rgba(13, 148, 136, 0.05) 100%
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.dark .glass,
+.dark .glass-subtle,
+.dark .glass-strong,
+.dark .floating-card {
+  background: rgba(28, 25, 23, 0.85);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .blur-primary {
+  background: linear-gradient(
+    135deg,
+    rgba(20, 184, 166, 0.2) 0%,
+    rgba(20, 184, 166, 0.05) 100%
+  );
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, #0d9488, #3d4a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   RESPONSIVE SECTION PADDING
+   ============================================ */
+.section-padding {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+/* ============================================
+   PHONE ICON ANIMATION
+   ============================================ */
+.phone-icon-animated::before,
+.phone-icon-animated::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  animation: phone-ring 1.5s ease-out infinite;
+}
+
+.phone-icon-animated::after {
+  animation-delay: 0.5s;
+}
+
+/* ============================================
+   BACKGROUND PATTERNS - Decorative Elements
+   ============================================ */
+
+/* Noise texture overlay */
+.bg-noise {
+  position: relative;
+}
+
+.bg-noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at center, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 70%);
+}
+
+.bg-gradient-hero {
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(13, 148, 136, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(234, 88, 12, 0.05) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(13, 148, 136, 0.03) 0%, transparent 50%, rgba(234, 88, 12, 0.02) 100%);
+}
+
+.bg-gradient-warm {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.05) 0%, rgba(249, 115, 22, 0.03) 50%, rgba(13, 148, 136, 0.02) 100%);
+}
+
+.bg-gradient-cool {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.05) 0%, rgba(20, 184, 166, 0.03) 50%, rgba(45, 212, 191, 0.02) 100%);
+}
+
+/* Mesh gradient effect */
+.bg-mesh {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 40% 20%, rgba(13, 148, 136, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(234, 88, 12, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(20, 184, 166, 0.05) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(13, 148, 136, 0.03) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(234, 88, 12, 0.03) 0px, transparent 50%);
+}
+
+/* Animated gradient orbs */
+@keyframes gradientOrb {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.5;
+  }
+  33% {
+    transform: translate(10px, -10px) scale(1.05);
+    opacity: 0.7;
+  }
+  66% {
+    transform: translate(-5px, 5px) scale(0.95);
+    opacity: 0.4;
+  }
+}
+
+.animate-gradient-orb {
+  animation: gradientOrb 8s ease-in-out infinite;
+}
+
+/* Background wrapper utilities */
+.bg-pattern-dots {
+  background-image: radial-gradient(rgba(13, 148, 136, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-pattern-grid {
+  background-image:
+    linear-gradient(rgba(13, 148, 136, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 148, 136, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.bg-pattern-diagonal {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(13, 148, 136, 0.02) 10px,
+    rgba(13, 148, 136, 0.02) 11px
+  );
+}
+
+/* Section background variants */
+.bg-section-primary {
+  background: linear-gradient(180deg, var(--background) 0%, rgba(13, 148, 136, 0.03) 100%);
+}
+
+.bg-section-alt {
+  background: linear-gradient(180deg, rgba(245, 245, 244, 0.5) 0%, var(--background) 100%);
+}
+
+.bg-section-accent {
+  background: linear-gradient(180deg, rgba(234, 88, 12, 0.03) 0%, var(--background) 100%);
+}

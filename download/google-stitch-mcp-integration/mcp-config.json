@@ -1,0 +1,131 @@
+{
+  "mcpServers": {
+    "google-stitch": {
+      "command": "node",
+      "args": ["stitch-mcp-server.js"],
+      "env": {
+        "GOOGLE_CLIENT_ID": "${GOOGLE_CLIENT_ID}",
+        "GOOGLE_CLIENT_SECRET": "${GOOGLE_CLIENT_SECRET}",
+        "GOOGLE_REDIRECT_URI": "${GOOGLE_REDIRECT_URI}"
+      },
+      "tools": [
+        {
+          "name": "generate_design",
+          "description": "Generate a UI design from a text description using Google Stitch",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "prompt": {
+                "type": "string",
+                "description": "Description of the UI design to generate"
+              },
+              "style": {
+                "type": "string",
+                "enum": ["modern", "minimal", "corporate", "playful", "professional"],
+                "default": "modern",
+                "description": "Visual style for the design"
+              },
+              "platform": {
+                "type": "string",
+                "enum": ["web", "mobile", "tablet"],
+                "default": "web",
+                "description": "Target platform for the design"
+              },
+              "framework": {
+                "type": "string",
+                "enum": ["react", "html", "vue", "figma"],
+                "default": "react",
+                "description": "Output framework for code export"
+              }
+            },
+            "required": ["prompt"]
+          }
+        },
+        {
+          "name": "generate_from_sketch",
+          "description": "Generate a UI design from an uploaded sketch or wireframe image",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "image_path": {
+                "type": "string",
+                "description": "Path to the sketch/wireframe image file"
+              },
+              "prompt": {
+                "type": "string",
+                "description": "Additional instructions for the design"
+              },
+              "framework": {
+                "type": "string",
+                "enum": ["react", "html", "figma"],
+                "default": "react"
+              }
+            },
+            "required": ["image_path"]
+          }
+        },
+        {
+          "name": "export_design",
+          "description": "Export a generated design to code",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "design_id": {
+                "type": "string",
+                "description": "ID of the design to export"
+              },
+              "format": {
+                "type": "string",
+                "enum": ["react", "html", "css", "figma"],
+                "description": "Export format"
+              },
+              "include_styles": {
+                "type": "boolean",
+                "default": true,
+                "description": "Include CSS/styles in export"
+              }
+            },
+            "required": ["design_id", "format"]
+          }
+        },
+        {
+          "name": "list_designs",
+          "description": "List all saved designs in your Stitch account",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "limit": {
+                "type": "number",
+                "default": 20,
+                "description": "Maximum number of designs to return"
+              },
+              "offset": {
+                "type": "number",
+                "default": 0,
+                "description": "Pagination offset"
+              }
+            }
+          }
+        },
+        {
+          "name": "refine_design",
+          "description": "Refine or modify an existing design",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "design_id": {
+                "type": "string",
+                "description": "ID of the design to refine"
+              },
+              "instructions": {
+                "type": "string",
+                "description": "Instructions for how to modify the design"
+              }
+            },
+            "required": ["design_id", "instructions"]
+          }
+        }
+      ]
+    }
+  }
+}

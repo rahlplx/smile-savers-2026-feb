@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025",
+    "name": "LLM API Pricing Comparison (2025): OpenAI, Gemini, Claude",
+    "snippet": "A complete LLM API pricing comparison for 2025. Analyze token-based costs for OpenAI (GPT-5), Google Gemini, Anthropic Claude, Grok, and DeepSeek models.",
+    "host_name": "intuitionlabs.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://madappgang.com/blog/best-free-ai-apis-for-2025-build-with-llms-without",
+    "name": "Best Free AI APIs for 2025: Build with LLMs Without Spending a Penny",
+    "snippet": "Build smarter in 2025 with the best free AI APIs. Access GPT-4-level LLMs like DeepSeek and Llama without paying a penny – perfect for apps, bots, and ...",
+    "host_name": "madappgang.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2307.12479v2",
+    "name": "Cloud and AI Infrastructure Cost Optimization - arXiv",
+    "snippet": "We examine the dramatic cost reductions in large language model (LLM) inference which has decreased by approximately 10x annually since 2021 and explore ...",
+    "host_name": "arxiv.org",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ai.google.dev/gemini-api/docs/pricing",
+    "name": "Gemini Developer API pricing",
+    "snippet": "Start building free of charge with generous limits, then scale up with pay-as-you-go pricing for your production ready applications. Free. For developers and ...",
+    "host_name": "ai.google.dev",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://aimlapi.com/best-ai-apis-for-free",
+    "name": "Best AI API's 2026 For Free | AIMLAPI.com",
+    "snippet": "Free · Developer Free LLM API. A Free LLM API lets developers instantly experiment with advanced AI models without upfront costs or complex setup, making it perfect for ...",
+    "host_name": "aimlapi.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/%40ajayverma23/taming-the-beast-cost-optimization-strategies-for-llm-api-calls-in-production-11f16dbe2c39",
+    "name": "Taming the Beast: Cost Optimization Strategies for LLM API Calls in",
+    "snippet": "This blog explores practical and impactful strategies to optimize the cost of your LLM API calls, ensuring that you can deliver powerful AI- ...",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cloud.google.com/vertex-ai",
+    "name": "Vertex AI Platform | Google Cloud",
+    "snippet": "Enterprise ready, fully-managed, unified AI development platform. Access and utilize Vertex AI Studio, Agent Builder, and 200+ foundation models.",
+    "host_name": "cloud.google.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.helicone.ai/blog/llm-api-providers",
+    "name": "Top 11 LLM API Providers in 2025 - Helicone.ai",
+    "snippet": "Compare the top LLM API providers including Together AI, Fireworks, Hyperbolic and Novita. Find the fastest, most cost-effective platforms ...",
+    "host_name": "www.helicone.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://codingscape.com/blog/best-ai-cloud-providers-for-llms-apps-compute",
+    "name": "Best AI cloud providers for LLMs, apps, and compute in 2025",
+    "snippet": "AWS, Azure, and Google Cloud, are the best AI cloud providers for LLMs, apps, and compute. Here's an overview of AI cloud services, pricing, and use cases.",
+    "host_name": "codingscape.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.nops.io/blog/genai-cost-optimization-tools",
+    "name": "Top 11 GenAI Cost Optimization Tools in [current_year] | nOps",
+    "snippet": "Explore 11 GenAI cost optimization tools in 2025. Compare features, pricing, and benefits to manage AI workloads and reduce cloud spend.",
+    "host_name": "www.nops.io",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "html": "<html><head><meta name=\"color-scheme\" content=\"light dark\"></head><body><pre style=\"word-wrap: break-word; white-space: pre-wrap;\">[\n  {\n    \"name\": \"triage\",\n    \"path\": \".agents/skills/triage\",\n    \"sha\": \"9d6d074f85ac28dc0519d06d3f791e69e32ae5b0\",\n    \"size\": 0,\n    \"url\": \"https://api.github.com/repos/withastro/astro/contents/.agents/skills/triage?ref=main\",\n    \"html_url\": \"https://github.com/withastro/astro/tree/main/.agents/skills/triage\",\n    \"git_url\": \"https://api.github.com/repos/withastro/astro/git/trees/9d6d074f85ac28dc0519d06d3f791e69e32ae5b0\",\n    \"download_url\": null,\n    \"type\": \"dir\",\n    \"_links\": {\n      \"self\": \"https://api.github.com/repos/withastro/astro/contents/.agents/skills/triage?ref=main\",\n      \"git\": \"https://api.github.com/repos/withastro/astro/git/trees/9d6d074f85ac28dc0519d06d3f791e69e32ae5b0\",\n      \"html\": \"https://github.com/withastro/astro/tree/main/.agents/skills/triage\"\n    }\n  }\n]\n</pre></body></html>",
+    "publishedTime": "Tue, 17 Feb 2026 08:43:25 GMT",
+    "title": "",
+    "url": "https://api.github.com/repos/withastro/astro/contents/.agents/skills",
+    "usage": {
+      "tokens": 327
+    }
+  },
+  "meta": {
+    "usage": {
+      "tokens": 327
+    }
+  },
+  "status": 20000
+}

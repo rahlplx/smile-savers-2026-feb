@@ -1,0 +1,23 @@
+# Smile Savers Creating Smiles - robots.txt
+# https://smilesaversandassociates.com
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Sitemap
+Sitemap: https://smilesaversandassociates.com/sitemap.xml

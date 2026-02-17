@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+    "name": "GitHub - VoltAgent/awesome-openclaw-skills",
+    "snippet": "Skills in this list are sourced from ClawHub (OpenClaw's public skills registry) and categorized for easier discovery. These skills follow the ...",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@viplav.fauzdar/clawdbot-building-a-real-open-source-ai-agent-that-actually-acts-f5333f657284",
+    "name": "Deploying an Open-Source AI Agent Framework for Real-World Tasks",
+    "snippet": "Skills: Structured Capabilities, Not Prompt Hacks. OpenClaw uses skills instead of ad-hoc tool calls. Diagram 3: Skills Model. Agent Intent Missing: VoltAgent | Show results with: VoltAgent",
+    "host_name": "medium.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://vertu.com/ai-tools/openclaw-clawdbot-architecture-engineering-reliable-and-controllable-ai-agents/?srsltid=AfmBOopSRtuoGHmPbNzeu1hVMep9-IVAAkmAst0hC6u_Dnr5cihWCCyA&srsltid=AfmBOoo_7FhdWHUaw9YNnroi0vMlrFneObjgUvi9bboW3Esbv_TVqUEu",
+    "name": "OpenClaw Architecture Guide | High-Reliability AI Agent Framework",
+    "snippet": "This article provides a comprehensive breakdown of the OpenClaw (Clawdbot) architecture, exploring its engineering-first approach to solving ... Missing: VoltAgent | Show results with: VoltAgent",
+    "host_name": "vertu.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://voltagent.dev/blog/ai-agent-frameworks",
+    "name": "Top 5 AI Agent Frameworks in 2025 - VoltAgent",
+    "snippet": "We'll check out the top 5 frameworks to help you choose the best tools for your smart apps.",
+    "host_name": "voltagent.dev",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://hellopm.co/openclaw-ai-agent-masterclass",
+    "name": "OpenClaw AI Agent Masterclass - HelloPM",
+    "snippet": "What Is OpenClaw and Why Should You Care? OpenClaw is an open-source AI agent framework that lets you talk to any large language model (GPT, ... Missing: VoltAgent | Show results with: VoltAgent",
+    "host_name": "hellopm.co",
+    "rank": 4,
+    "date": "Feb 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/cmichaelgraham_what-is-voltagent-an-ai-agent-framework-activity-7342932593450827777-ciPm",
+    "name": "VoltAgent: An Open-Source AI Agent Framework - LinkedIn",
+    "snippet": "What is VoltAgent? An AI Agent Framework provides the foundational structure and tools needed to build applications powered by autonomous ...",
+    "host_name": "www.linkedin.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "name": "VoltAgent/awesome-agent-skills: Claude Code Skills and  - GitHub",
+    "snippet": "Agent Skills are folders with instructions, scripts, and resources that teach AI coding assistants specific tasks. This collection features official skills ...",
+    "host_name": "github.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/openclaw-inside-the-architecture-and-impact-of-the-viral-autonomous-agent-838c53f512d8",
+    "name": "OpenClaw: Inside the Architecture and Impact of the Viral Autonomous",
+    "snippet": "This article unpacks OpenClaw from four angles: its architecture and capabilities, the community's real-world experiences, the emerging ... Missing: VoltAgent | Show results with: VoltAgent",
+    "host_name": "pub.towardsai.net",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

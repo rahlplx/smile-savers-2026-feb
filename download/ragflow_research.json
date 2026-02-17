@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://github.com/infiniflow/ragflow",
+    "name": "infiniflow/ragflow - GitHub",
+    "snippet": "Key Features. \"Quality in, quality out\". Deep document understanding-based knowledge extraction from unstructured data with complicated formats. Finds ... Missing: 2024 | Show results with: 2024",
+    "host_name": "github.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ragflow.io/blog/the-rise-and-evolution-of-rag-in-2024-a-year-in-review",
+    "name": "The Rise and Evolution of RAG in 2024 A Year in Review - RAGFlow",
+    "snippet": "Another advantage of using multimodal models for document intelligence is the ability to incorporate textual information into document layouts.",
+    "host_name": "ragflow.io",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/%40infiniflowai/ragflow-customizable-credible-explainable-rag-engine-based-on-document-structure-recognition-6a2a2369bd2a",
+    "name": "RAGFlow: Customizable, Credible, Explainable RAG engine based",
+    "snippet": "RAGFlow serves as a comprehensive RAG solution that enables users to upload and manage their documents.",
+    "host_name": "medium.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.pondhouse-data.com/blog/introduction-to-ragflow",
+    "name": "Introduction to RAGFlow: Open-Source RAG Engine with Deep",
+    "snippet": "Ragflow markets itself as an open-source RAG engine with main focus on \"deep document understanding\". So it tries to have specific focus on the document parsing ...",
+    "host_name": "www.pondhouse-data.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://dev.to/rohan_sharma/top-10-open-source-rag-frameworks-you-need-3fhe",
+    "name": "Top 10 Open-Source RAG Frameworks you need!! - DEV Community",
+    "snippet": "Deep Document Understanding: RAGFlow excels in processing complex, unstructured data formats, enabling accurate information extraction and ...",
+    "host_name": "dev.to",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ragflow.io/blog/ragflow-0.21.0-ingestion-pipeline-long-context-rag-and-admin-cli",
+    "name": "Ingestion Pipeline, Long-Context RAG, and Admin CLI - RAGFlow",
+    "snippet": "When RAGFlow first launched in April 2024, it already incorporated an advanced toolchain, including the DeepDoc-based parsing engine and a ...",
+    "host_name": "ragflow.io",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1bt1kb5/ragflow_the_deep_document_understanding_based_rag",
+    "name": "RAGFlow, the deep document understanding based #rag engine is",
+    "snippet": "A RAG library that is looking at the hard problem in this space: understanding semantic document structure and layout. RAGFlow, the deep document understanding based RAG engine is ... [P] RAGFlow, the deep document understanding based #rag engine ... More results from www.reddit.com Missing: features | Show results with: features",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cnb.cool/lertian/RAGFlow",
+    "name": "lertian/RAGFlow · Cloud Native Build",
+    "snippet": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine based on deep document understanding. It offers a streamlined RAG workflow for ...",
+    "host_name": "cnb.cool",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

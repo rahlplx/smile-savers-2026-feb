@@ -1,0 +1,124 @@
+{
+  "patterns": {
+    "react_lazy_init": {
+      "id": "react_lazy_init",
+      "name": "Lazy Initialization",
+      "description": "SSR-safe state initialization for localStorage and window access",
+      "code": "const [value, setValue] = useState(() => {\n  if (typeof window === 'undefined') return defaultValue;\n  return localStorage.getItem('key') || defaultValue;\n});",
+      "confidence": 0.95,
+      "tags": ["react", "ssr", "nextjs", "hooks"],
+      "errors_fixed": ["react-hooks/set-state-in-effect"],
+      "created_at": "2025-02-17"
+    },
+    "react_mounted_state": {
+      "id": "react_mounted_state",
+      "name": "Mounted State Pattern",
+      "description": "Prevents hydration mismatch by deferring client-only rendering",
+      "code": "const [mounted, setMounted] = useState(false);\nuseEffect(() => setMounted(true), []);\nif (!mounted) return <Skeleton />;\nreturn <ClientContent />;",
+      "confidence": 0.88,
+      "tags": ["react", "ssr", "hydration"],
+      "errors_fixed": ["hydration-mismatch"],
+      "created_at": "2025-02-17"
+    },
+    "react_safe_window": {
+      "id": "react_safe_window",
+      "name": "Safe Window Access",
+      "description": "Access window object safely in SSR environment",
+      "code": "const [width, setWidth] = useState(0);\nuseEffect(() => {\n  setWidth(window.innerWidth);\n}, []);",
+      "confidence": 0.92,
+      "tags": ["react", "ssr", "window"],
+      "errors_fixed": ["window-is-undefined"],
+      "created_at": "2025-02-17"
+    },
+    "next_image": {
+      "id": "next_image",
+      "name": "Next.js Image Component",
+      "description": "Use Next.js Image instead of img for better performance",
+      "code": "import Image from 'next/image';\n<Image src=\"/image.png\" alt=\"description\" width={500} height={300} />",
+      "confidence": 0.95,
+      "tags": ["nextjs", "performance", "image"],
+      "errors_fixed": ["@next/next/no-img-element"],
+      "created_at": "2025-02-17"
+    },
+    "glassmorphism": {
+      "id": "glassmorphism",
+      "name": "Glassmorphism Effect",
+      "description": "Modern glass UI effect with blur and transparency",
+      "code": ".glass {\n  background: rgba(255, 255, 255, 0.85);\n  backdrop-filter: blur(20px) saturate(180%);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n}",
+      "confidence": 0.92,
+      "tags": ["css", "ui", "design"],
+      "created_at": "2025-02-17"
+    },
+    "use_local_storage": {
+      "id": "use_local_storage",
+      "name": "useLocalStorage Hook",
+      "description": "Safe localStorage hook with SSR support",
+      "code": "function useLocalStorage<T>(key: string, initialValue: T) {\n  const [storedValue, setStoredValue] = useState<T>(() => {\n    if (typeof window === 'undefined') return initialValue;\n    try {\n      const item = window.localStorage.getItem(key);\n      return item ? JSON.parse(item) : initialValue;\n    } catch {\n      return initialValue;\n    }\n  });\n  return [storedValue, setStoredValue] as const;\n}",
+      "confidence": 0.90,
+      "tags": ["react", "hooks", "localStorage"],
+      "created_at": "2025-02-17"
+    },
+    "dynamic_import": {
+      "id": "dynamic_import",
+      "name": "Dynamic Import",
+      "description": "Load heavy components dynamically for better performance",
+      "code": "import dynamic from 'next/dynamic';\nconst HeavyComponent = dynamic(() => import('./Heavy'), {\n  loading: () => <Skeleton />,\n  ssr: false\n});",
+      "confidence": 0.88,
+      "tags": ["nextjs", "performance", "lazy-load"],
+      "created_at": "2025-02-17"
+    }
+  },
+  "errors": {
+    "react-hooks/set-state-in-effect": {
+      "error": "react-hooks/set-state-in-effect",
+      "message": "setState in useEffect is not allowed",
+      "failed_attempts": [
+        "Direct setState in useEffect",
+        "Separate effects for state and DOM",
+        "queueMicrotask deferral",
+        "External module state"
+      ],
+      "working_solution": "react_lazy_init",
+      "confidence": 0.95
+    },
+    "hydration-mismatch": {
+      "error": "hydration-mismatch",
+      "message": "Server rendered HTML didn't match client",
+      "failed_attempts": [
+        "Direct localStorage access in component body",
+        "window check without useEffect"
+      ],
+      "working_solution": "react_mounted_state",
+      "confidence": 0.88
+    },
+    "@next/next/no-img-element": {
+      "error": "@next/next/no-img-element",
+      "message": "Using <img> could result in slower LCP",
+      "failed_attempts": [],
+      "working_solution": "next_image",
+      "confidence": 0.95
+    }
+  },
+  "architecture_decisions": [
+    {
+      "decision": "SQLite over Redis",
+      "reason": "Zero cost, local persistence, no server required"
+    },
+    {
+      "decision": "Free tier model routing",
+      "reason": "Target $0 cost per 1K queries"
+    },
+    {
+      "decision": "CSS animations over Framer Motion",
+      "reason": "Performance, reduced bundle size"
+    },
+    {
+      "decision": "Lazy initialization pattern",
+      "reason": "Avoids ESLint error and SSR issues"
+    },
+    {
+      "decision": "Dual-level retrieval",
+      "reason": "Better accuracy combining vector + graph search"
+    }
+  ]
+}

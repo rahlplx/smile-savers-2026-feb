@@ -1,0 +1,155 @@
+{
+  "version": "4.1.0",
+  "lastUpdated": "2026-02-17",
+  "description": "Enterprise RAG System - Zero Cost Architecture with Google Stitch Integration",
+  
+  "year1Goal": "FREE FOREVER MODEL - $0 cloud cost",
+  
+  "freeTierStrategy": {
+    "gemini": {"daily": 1500, "cost": 0},
+    "deepseek": {"daily": "unlimited", "cost": 0},
+    "local": {"daily": "unlimited", "cost": 0},
+    "cache": {"daily": "unlimited", "cost": 0, "targetHitRate": 0.90}
+  },
+  
+  "skillCategories": {
+    "orchestrator": ["unified-skill-orchestrator"],
+    "rag": ["mas-rag-system", "auto-learning-tracker", "knowledge"],
+    "ai_media": ["LLM", "ASR", "TTS", "VLM", "image-generation", "video-generation", "video-understand", "podcast-generate"],
+    "document_processing": ["docx", "xlsx", "pdf", "pptx"],
+    "web_interaction": ["web-search", "web-reader", "finance"],
+    "frontend_design": ["frontend-design", "glassmorphism-design-patterns", "accessibility-implementation"],
+    "development_patterns": ["react-patterns", "lint-error-solutions", "lint-fixer"],
+    "workflow_automation": ["python-workflow-tools"],
+    "website_generation": ["website-generator", "triage-workflow", "ml-stress-test"],
+    "ui_generation": ["google-stitch"]
+  },
+  
+  "skills": {
+    "unified-skill-orchestrator": {
+      "id": "unified-skill-orchestrator",
+      "name": "Unified Skill Orchestrator",
+      "category": "orchestrator",
+      "description": "Main orchestrator with dual-level retrieval and free tier routing",
+      "hasScripts": true,
+      "hasPython": true,
+      "peerSkills": ["mas-rag-system", "react-patterns", "lint-fixer"]
+    },
+    "mas-rag-system": {
+      "id": "mas-rag-system",
+      "name": "MAS-RAG System",
+      "category": "rag",
+      "description": "Multi-Agent Self-Learning RAG with deep document understanding",
+      "hasPython": true,
+      "peerSkills": ["auto-learning-tracker", "knowledge"]
+    },
+    "auto-learning-tracker": {
+      "id": "auto-learning-tracker",
+      "name": "Auto-Learning Tracker",
+      "category": "rag",
+      "description": "Pattern learning and tracking",
+      "hasPython": true,
+      "peerSkills": ["knowledge"]
+    },
+    "knowledge": {
+      "id": "knowledge",
+      "name": "Knowledge Base",
+      "category": "rag",
+      "description": "Central knowledge repository"
+    },
+    "react-patterns": {
+      "id": "react-patterns",
+      "name": "React Patterns",
+      "category": "development_patterns",
+      "description": "SSR-safe React/Next.js patterns",
+      "peerSkills": ["lint-error-solutions"]
+    },
+    "lint-error-solutions": {
+      "id": "lint-error-solutions",
+      "name": "Lint Error Solutions",
+      "category": "development_patterns",
+      "description": "Complete ESLint debugging journey",
+      "peerSkills": ["react-patterns", "lint-fixer"]
+    },
+    "lint-fixer": {
+      "id": "lint-fixer",
+      "name": "Lint Fixer",
+      "category": "development_patterns",
+      "description": "Automated lint fixing",
+      "hasPython": true,
+      "peerSkills": ["lint-error-solutions", "react-patterns"]
+    },
+    "LLM": {"id": "LLM", "name": "LLM Chat", "category": "ai_media", "hasScripts": true},
+    "VLM": {"id": "VLM", "name": "Vision LLM", "category": "ai_media", "hasScripts": true},
+    "ASR": {"id": "ASR", "name": "Speech to Text", "category": "ai_media", "hasScripts": true},
+    "TTS": {"id": "TTS", "name": "Text to Speech", "category": "ai_media", "hasScripts": true},
+    "image-generation": {"id": "image-generation", "name": "Image Generation", "category": "ai_media", "hasScripts": true},
+    "video-generation": {"id": "video-generation", "name": "Video Generation", "category": "ai_media", "hasScripts": true},
+    "video-understand": {"id": "video-understand", "name": "Video Understanding", "category": "ai_media", "hasScripts": true},
+    "podcast-generate": {"id": "podcast-generate", "name": "Podcast Generator", "category": "ai_media", "hasScripts": true},
+    "docx": {"id": "docx", "name": "Word Documents", "category": "document_processing", "hasPython": true},
+    "xlsx": {"id": "xlsx", "name": "Excel Spreadsheets", "category": "document_processing", "hasPython": true},
+    "pdf": {"id": "pdf", "name": "PDF Documents", "category": "document_processing", "hasPython": true},
+    "pptx": {"id": "pptx", "name": "PowerPoint", "category": "document_processing"},
+    "web-search": {"id": "web-search", "name": "Web Search", "category": "web_interaction", "hasScripts": true},
+    "web-reader": {"id": "web-reader", "name": "Web Reader", "category": "web_interaction", "hasScripts": true},
+    "finance": {"id": "finance", "name": "Finance API", "category": "web_interaction"},
+    "frontend-design": {"id": "frontend-design", "name": "Frontend Design", "category": "frontend_design"},
+    "python-workflow-tools": {"id": "python-workflow-tools", "name": "Python Tools", "category": "workflow_automation", "hasPython": true},
+    "website-generator": {"id": "website-generator", "name": "Website Generator", "category": "website_generation"},
+    "triage-workflow": {"id": "triage-workflow", "name": "Triage Workflow", "category": "website_generation"},
+    "ml-stress-test": {"id": "ml-stress-test", "name": "ML Stress Test", "category": "website_generation", "hasPython": true},
+    "google-stitch": {
+      "id": "google-stitch",
+      "name": "Google Stitch MCP",
+      "category": "ui_generation",
+      "description": "AI-powered text-to-UI generation via MCP",
+      "hasScripts": true,
+      "peerSkills": ["frontend-design", "react-patterns"],
+      "config": {
+        "dailyCredits": 400,
+        "redesignCredits": 15,
+        "outputFormats": ["react", "html", "figma", "flutter"]
+      }
+    }
+  },
+  
+  "triggerMatrix": {
+    "lint": {"primary": "lint-fixer", "secondary": ["lint-error-solutions", "react-patterns"]},
+    "document": {"primary": "docx", "secondary": ["pdf", "xlsx"]},
+    "rag": {"primary": "mas-rag-system", "secondary": ["auto-learning-tracker", "knowledge"]},
+    "generate": {"primary": "LLM", "secondary": ["VLM", "image-generation"]},
+    "search": {"primary": "web-search", "secondary": ["web-reader"]},
+    "bug": {"primary": "triage-workflow", "secondary": ["lint-error-solutions"]},
+    "ui": {"primary": "google-stitch", "secondary": ["frontend-design"]},
+    "design": {"primary": "google-stitch", "secondary": ["frontend-design"]}
+  },
+  
+  "executionPatterns": {
+    "lazyInitialization": {
+      "skill": "react-patterns",
+      "codePattern": "useState(() => { ... })",
+      "confidence": 0.95
+    },
+    "mountedState": {
+      "skill": "react-patterns", 
+      "codePattern": "const [mounted, setMounted] = useState(false)",
+      "confidence": 0.88
+    }
+  },
+  
+  "cacheConfig": {
+    "pattern": {"ttl": 604800, "maxEntries": 1000},
+    "execution": {"ttl": 86400, "maxEntries": 500},
+    "metrics": {"ttl": 3600, "maxEntries": 100},
+    "knowledge": {"ttl": 2592000, "maxEntries": 5000}
+  },
+  
+  "performanceTargets": {
+    "cacheHitRate": 0.90,
+    "responseTimeMs": 500,
+    "costPer1kQueries": 0.00,
+    "accuracy": 0.95,
+    "freeTierUsage": 0.80
+  }
+}

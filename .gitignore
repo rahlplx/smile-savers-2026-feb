@@ -47,8 +47,11 @@ test
 prompt
 
 server.log
-# Skills directory
-/skills/
+# Skills directory - excluding cache and local files
+/skills/cache/
+/skills/**/*.db
+/skills/**/*.pyc
+/skills/**/__pycache__/
 # Environment variables
 .env.local
 .env.*.local
